@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+
+:root {
+  --cor0: #1e1e1ede;
+  --cor1: #000000;
+  --cor2: #1b1b2b;
+  --cor3: #1e1e1e;
+  --cor4: #5e2e2e;
+  --cor5: #4b4b4b;
+  --cor6: #d04848;
+  --cor7: #f5f5f5;
+
+
+  --foto-ba: url("madrugada-wallpaper.jpg");
+
+
+  --fontetitu: 'Amatic SC', cursive;
+}
+* { padding: 0em; margin: 0em; } a { text-decoration: none; }
+body {
+  min-height: 100%;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cor3) var(--foto-ba) center center no-repeat fixed;
+} html { min-height: 100%; }
+
+
+
+
+
+
+/* corpo */
+main {
+  background-color: var(--cor0);
+  border-radius: 1em;
+  box-shadow: inset 0vw 0vw 2.5vw var(--cor1);
+  transform: translate( -50% , 00% );
+  position: absolute;
+  padding: 0.15em;
+  margin: auto;
+  width: min( 90% , 64em );
+  left: 50%;
+  top: 2.5em;
+}
+
+
+/* título e volta */
+article#titu {
+  background-image: linear-gradient( 00deg , transparent 75% , var(--cor1) );
+  border-radius: 0.9em 0.9em 0em 0em;
+  border-bottom: 0.1vw solid var(--cor7);
+  text-align: right;
+  position: relative;
+} div#vol {
+  position: absolute;
+  height: 100%;
+  width: 4.5em;
+} a#vol > img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate( -50% , -50% );
+  width: 3em;
+} a#vol > img:hover { box-shadow: inset 0vw 0vw 01vw var(--cor7); }
+
+
+div#titu {
+  display: inline-block;
+  width: calc( 100% - 5em );
+} article#titu > div#titu > h1 {
+  letter-spacing: 0.1em;
+  text-shadow: 0em 0em 0.25em var(--cor6);
+  font-family: var(--fontetitu);
+  text-align: left;
+  font-size: 3.2em;
+  color: var(--cor6);
+}
